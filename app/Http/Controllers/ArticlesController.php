@@ -11,7 +11,7 @@ class ArticlesController extends Controller
 {
   public function index(){
     // $articles = Article::order_by('published_at', 'desc')->get();
-    $articles = Article::latest('published_at')->get();
+    $articles = Article::latest('published_at')->published()->get();
     return view('articles.index', compact('articles'));
   }
 
@@ -20,6 +20,7 @@ class ArticlesController extends Controller
     // if(is_null($article)){
     //   abort(404);
     // }
+    dd($article->published_at);
     return view('articles.show', compact('article'));
   }
 
