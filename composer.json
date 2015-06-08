@@ -7,7 +7,9 @@
     "require": {
         "laravel/framework": "5.1.*",
         "doctrine/dbal": "^2.6@dev",
-        "illuminate/html": "^5.0@dev"
+        "illuminate/html": "^5.0@dev",
+        "guzzlehttp/guzzle": "^6.0@dev",
+        "guzzle/guzzle": "^3.9@dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
